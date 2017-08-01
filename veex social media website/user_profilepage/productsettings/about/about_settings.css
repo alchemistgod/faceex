@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/******** General stuff ********/
+body {
+  	background-color: #e6e6e6;
+}
+
+#main_container {
+  	margin: 30px auto;
+  	width: 70%;
+  	overflow: hidden;
+}
+
+#internal_container {
+	width: 50%;
+	margin: 60px auto;
+}
+
+#box_title {
+	/*color: #004d99;*/
+	text-align: center;
+}
+
+/* Shadow effect for sections of page */
+.settings_box {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+	clear: both;  /* Prevents footer from moving out of position */ 
+	padding: 40px;
+}
+
+.first_row {
+	margin-bottom: 30px;
+}
+
+#settings_info li {
+	list-style-type: none; /* Removes dots from list */
+}
+
+/******** Settings section ********/
+.settings_box {
+	padding: 20px;
+}
+
+/* Form */
+.settings_box {
+	/*padding: 10px;*/
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* CSS styling for form referenced from http://webdesign.tutsplus.com/tutorials/bring-your-forms-up-to-date-with-css3-and-html5-validation--webdesign-4738 */
+.settings_box {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.settings_box h1 {
+	text-align: center;
+}
+
+.settings_box ul {
+    width: 100%;
+    list-style-type:none;
+}
+
+.settings_box li {
+    padding: 10px; 
+    position: relative;
+}
+
+.settings_box li:nth-child(odd) {
+    background-color: #F2F2F2;
+} 
+
+.settings_box label {
+    width: 150px;
+    margin-top: 5px;
+    padding: 3px;
+    display: inline-block;
+    float: left;
+}
+
+.settings_box input {
+    width: 200px; 
+    padding: 5px;
+}
+
+#submit_button {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#error {
+    color: red;
+}

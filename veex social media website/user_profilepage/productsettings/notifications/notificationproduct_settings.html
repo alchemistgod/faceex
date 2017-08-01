@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Settings - test - FaceEX</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- Custom styles for dashboard template -->
+    <link href="dashboard.css" rel="stylesheet">
+    <!-- Custom styles for offcanvas template -->
+    <link href="offcanvas.css" rel="stylesheet">
+
+    <link href="notificationproduct_settings.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ========== Main container ========== --> 
+    <div id="main_container">
+        <!-- ========== Top nav bar ========== --> 
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="../../productpage/productpage.html">FaceEX</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../../productpage/productpage.html">Profile</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../general/generalproduct_settings.html">General</a></li>
+                                <li><a href="../about/about_settings.html">About</a></li>
+                                <li><a href="../profileimage/profileimageproduct_settings.html">Profile Image</a></li>
+                                <li><a href="../notifications/notificationproduct_settings.html">Notifications</a></li>
+                                <li><a href="../password/passwordproduct_settings.html">Password</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#notifications">Notifications</a></li>
+                        <li><a href="../../../signup/signup.html">Log Out</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </form>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+        <!-- ========== Internal container ========== --> 
+        <div id="internal_container">
+            <div class="notifications_box">
+                <h1>Notifications Settings</h1>
+                <form id="notifications_info" action="">
+                    <ul>
+                        <li>
+                            <label for="likes">Likes Notifications:</label>
+                            <select name="likes" id="likes">
+                                <option selected="selected" value="on">On</option>
+                                <option value="off">Off</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="comments">Comments Notifications:</label>
+                            <select name="comments" id="comments">
+                                <option selected="selected" value="on">On</option>
+                                <option value="off">Off</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="follower">Follower Notifications:</label>
+                            <select name="follower" id="follower">
+                                <option selected="selected" value="on">On</option>
+                                <option value="off">Off</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="sounds">Notifications Sound:</label>
+                            <select name="sounds" id="sounds">
+                                <option selected="selected" value="on">On</option>
+                                <option value="off">Off</option>
+                            </select>
+                        </li>
+                        <li>
+                            <div id="submit_button">
+                                <input type="submit" id="save_changes" value="Save Changes">
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+        <!-- ========== Footer ========== --> 
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2016 VeEX Inc. All Rights Reserved. &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Use</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Disclaimer</a> &middot; <a href="#">Contact</a> &middot; <a href="#">About</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product - test - FaceEX</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- Custom styles for dashboard template -->
+    <link href="dashboard.css" rel="stylesheet">
+    <!-- Custom styles for offcanvas template -->
+    <link href="offcanvas.css" rel="stylesheet">
+
+    <link href="productpage.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ========== Main container ========== --> 
+    <div id="main_container">
+        <!-- ========== Top nav bar ========== --> 
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="productpage.html">FaceEX</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="productpage.html">Profile</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../productsettings/general/generalproduct_settings.html">General</a></li>
+                                <li><a href="../productsettings/about/about_settings.html">About</a></li>
+                                <li><a href="../productsettings/profileimage/profileimageproduct_settings.html">Profile Image</a></li>
+                                <li><a href="../productsettings/notifications/notificationproduct_settings.html">Notifications</a></li>
+                                <li><a href="../productsettings/password/passwordproduct_settings.html">Password</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#notifications">Notifications</a></li>
+                        <li><a href="../../signup/signup.html">Log Out</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </form>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+        <!-- ========== Internal container ========== --> 
+        <div id="internal_container">
+            <div class="first_row">
+                <div class="profile_box">
+                    <div id="profile_picture">
+                        <figure class="profile" id="profile_image">
+                            <img src="../../pictures/latest_image1.jpg" alt="profile">
+                        </figure>
+                    </div>
+                    <div id="user_info">
+                        <h1 id="productTitle1">CX380s-D3.1</h1>
+                        <h4 id="productTitle2">DOCSIS 3.0/3.1</h4>
+                        <a href="http://www.veexinc.com/en-us/Products/CX380sD31" id="productLink">Main Product Site</a>
+                    </div>
+                </div>
+
+                <div class="related_box">
+                    <h1 id="box_title">Related Products</h1>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td id="related_image"><a href="#"><img id="related_picture" src="../../pictures/related_image1.jpg" alt="related product 1"></a></td>
+                                <td id="related_image"><a href="#"><img id="related_picture" src="../../pictures/related_image2.jpg" alt="related product 2"></a></td>
+                                <td id="related_image"><a href="#"><img id="related_picture" src="../../pictures/related_image3.jpg" alt="related product 3"></a></td>
+                                <td id="related_image"><a href="#"><img id="related_picture" src="../../pictures/related_image4.jpg" alt="related product 4"></a></td>
+                                <td id="related_image"><a href="#"><img id="related_picture" src="../../pictures/related_image5.jpg" alt="related product 5"></a></td>
+                                <td id="related_image"><a href="#"><img id="related_picture" src="../../pictures/related_image6.jpg" alt="related product 6"></a></td>
+                            </tr>
+                            <tr>
+                                <td id="related_name"><a href="#">CX100+</a></td>
+                                <td id="related_name"><a href="#">CX110+</a></td>
+                                <td id="related_name"><a href="#">CX120+</a></td>
+                                <td id="related_name"><a href="#">CX180-D3+</a></td>
+                                <td id="related_name"><a href="#">CX40</a></td>
+                                <td id="related_name"><a href="#">CX10/CX10+</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a id="view_more_products" href="#">View More</a>
+                </div>                
+            </div> 
+
+            <div class="about_box">
+                <h1 id="box_title">About</h1>
+                <h4 id="subtitle1">Super-Tech Maintenance Tool for CATV</h4>
+                <p id="description">
+                    The VePAL CX380s-D3.1 is a next generation test solution designed for analog and digital cable TV networks with enhanced spectrum anaylsis, digital channel, DOCSIS 3.0/3.1, Sweep, MPEG analysis and Ethernet test capabilities.
+                </p>
+                <h4 id="subtitle2">Platform Highlights</h4>
+                <ul>
+                    <li>Robust, lightweight chassis packed with powerful features for demanding environments and test conditions</li>
+                    <li>High resolution color 7” touch-screen with graphical user interface</li>
+                    <li>Ethernet LAN management port for remote control, back office applications and workforce management</li>
+                    <li>Fast and efficient test result transfer to USB memory stick or FTP upload via LAN, DOCSIS, USB WiFi, USB data modem or USB Bluetooth</li>
+                    <li>Maintain instrument software, manage test setups and channel tables, process measurement results and generate customer test reports using included ReVeal™ PC software</li>
+                    <li>Extend field testing time using interchangeable LiIon battery pack/s</li>
+                    <li>Ability to lock user interface to prevent unwanted human interference during long-term testing</li>
+                    <li>WiFi Wiz with InSSiDer SSID Analysis*</li>
+                    <li>WiFi Spectrum Analyzer*</li>
+                    <li>VoIP and IPTV*</li>
+                    <li>Digital Fiber Inspection Scope*</li>
+                    <li>Optical Power Meter*</li>
+                </ul>
+                <h4 id="subtitle3">Key Features</h4>
+                <ul>
+                    <li>Frequency range from 5 MHz to 1 GHz</li>
+                    <li>Comprehensive SLM measurements (Single Channel, System Scan, Tilt and Installation Check)</li>
+                    <li>Annex A, B, C support</li>
+                    <li>True Spectrum Analyzer with 30 ms sweep time to capture fast transient and impulse noise</li>
+                    <li>MPEG Explorer: QAM channel MPEG-TS analysis*</li>
+                    <li>Upstream Generator* (CW, QPSK, QAM 16/64/128/256 modulation)</li>
+                    <li>Forward and Return path QAM measurements (MER, Pre/Post BER, Constellation diagram, Histogram and Equalizer on/off mode)</li>
+                    <li>Advanced Digital measurements* (HUM, EVM, Phase Jitter, Symbol Rate Error, Frequency Response, Group Delay)</li>
+                    <li>DOCSIS 3.0 Cable Modem with up to 32x8 Channel Bonding</li>
+                    <li>DOCSIS 3.1 Cable Modem*</li>
+                    <li>FCC POP including Digital POP*</li>
+                    <li>Ethernet up to GigE with SLA validation tests including BERT, Throughput, RFC2544 and Y.1564 SAM</li>
+                    <li>Headend Check auto test for the entire selected Channel Table lineup*</li>
+                    <li>VeTest Throughput*</li>
+                    <li>QAM Wiz DOCSIS Burst Demodulator*</li>
+                    <li>OFDM Terrestrial Digital Channel Measurements (Japanese variant)*</li>
+                </ul>
+                <p>* Optional features</p>                
+            </div>
+                
+            <div class="post_box">
+                <h1 id="box_title">Submit a Post</h1>
+                <form action="#">
+                    <textarea id="postsubmission" class="message-form" placeholder="What's happening?" name="message"></textarea><br>
+                    <label for="picture_upload">Upload Images</label>
+                    <input type="file" name="pic" id="picture_upload" accept="image/*"><br>
+                    <label for="video_upload">Upload Videos</label>
+                    <input type="file" name="vid" id="video_upload" accept="video/*"><br>
+                    <label for="regular_file_upload">Upload Documents</label>
+                    <input type="file" name="doc" id="regular_file_upload" accept=".doc"><br>
+                    <input type="submit" value="Post">
+                </form>
+            </div>
+
+            <div class="pinned_box">
+                <h1 id="box_title">Pinned Features</h1>
+            </div>
+
+            <div class="myposts_box">
+                <h1 id="box_title">Official Posts</h1>
+            </div>
+        </div>
+
+        <!-- ========== Footer ========== --> 
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2016 VeEX Inc. All Rights Reserved. &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Use</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Disclaimer</a> &middot; <a href="#">Contact</a> &middot; <a href="#">About</a></p>
+        </footer>
+    </div>
+</body>
+</html>

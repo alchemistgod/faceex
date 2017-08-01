@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}*/
+
+/******** General stuff ********/
+body {
+  background-color: #e6e6e6;
+}
+
+h2 {
+  color: #336699;
+}
+
+h3 {
+  color: #333399;
+}
+
+#internal_container {
+  margin: 30px auto;
+  width: 70%;
+  overflow: hidden;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+footer {
+  padding: 30px;
+}
+
+/******** Carousel stuff *******/
+.carousel-caption {
+  padding-bottom: 250px;
+}
+
+#carousel_text1, #carousel_text2 {
+  color: white;
+}
+
+/******* Sign up button *******/
+#signup_account {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+}
+
+/******* Latest products section *******/
+#latest_products_title {
+  text-align: center;
+}
+
+.latest_products {
+  padding-top: 20px;
+  text-align: justify;
+  border-bottom: 1px solid gray;
+}
+
+/* Center align the text within the three columns below the carousel */
+.latest_products .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.latest_products h2 {
+  font-weight: normal;
+}
+.latest_products .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#forgot_password_link {
+  padding-left: 10px;
+  font-style: italic;
+}

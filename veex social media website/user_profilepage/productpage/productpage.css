@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/******** General stuff ********/
+body {
+  	background-color: #e6e6e6;
+}
+
+#main_container {
+  	margin: 30px auto;
+  	width: 70%;
+  	overflow: hidden;
+}
+
+#internal_container {
+	margin-top: 60px;
+}
+
+#box_title {
+	/*color: #004d99;*/
+	text-align: center;
+}
+
+/* Shadow effect for sections of page */
+.profile_box, .post_box, .about_box, .related_box, .pinned_box, .myposts_box {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+	clear: both;  /* Prevents footer from moving out of position */ 
+	padding: 40px;
+}
+
+.first_row {
+	margin-bottom: 30px;
+}
+
+/******** Main profile section ********/
+.profile_box {
+	padding: 20px;
+	float: left;
+	margin-right: 25px;
+	clear: both;
+}
+
+#profile_picture {
+	float: left;
+}
+
+#profile_picture img {
+	width: 60%;
+	height: 60%;
+}
+
+#user_info {
+	display: inline-block;
+}
+
+#user_info li {
+	list-style-type: none; /* Removes dots from list */
+}
+
+/******* Related products section *******/
+.related_box {
+	padding: 20px;
+	overflow: hidden;
+	height: 258px;
+}
+
+#related_picture {
+	width: 50%;
+	height: 50%;
+}
+
+#view_more_products {
+	margin-top: 10px;
+	float: right;
+}
+
+
+/******* About section *******/
+.about_box {
+	padding: 20px;
+	/*overflow: scroll;
+	height: 258px;*/
+	margin-bottom: 30px;
+}
+
+/******* Post section *******/
+.post_box {
+	float: left;
+	width: 45%;
+	padding: 20px;
+	margin-right: 25px;
+	margin-bottom: 30px;
+}
+
+#postsubmission {
+	width: 560px;
+	height: 149px;
+	-webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    flex-direction: column;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    resize: none;
+}
+
+/******* Pinned section *******/
+.pinned_box {
+	padding: 20px;
+	overflow: hidden;
+	height: 490px;
+	margin-bottom: 30px;
+}
+
+/******* My posts section *******/
+.myposts_box {
+	width: 50%;
+    margin: 0 auto; 
+    padding: 20px;
+}

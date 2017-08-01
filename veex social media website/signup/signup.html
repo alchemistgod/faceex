@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FaceEX - Sign Up</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- Custom styles for jumbotron template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <!-- Custom styles for carousel template -->
+    <link href="carousel.css" rel="stylesheet">
+    <!-- Custom styles for theme template -->
+    <link href="theme.css" rel="stylesheet">
+
+    <link href="signup.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ========== Main container ========== --> 
+	<div id="main_container">
+        <header>
+            <h1>
+                <a href="../homepage/homepage.html">FaceEX</a>
+            </h1>
+        </header>
+
+        <table>
+            <tr>
+                <!-- ========== Sign up column ========== --> 
+                <td id="signup_column">
+                    <form class="form-signup">
+                        <h2 class="form-signup-heading">Create an account</h2>
+                        <p style="color: red">* Required</p>
+                        <div id="inputField">
+                            <span id="required">*</span>
+                            <label for="inputFirstName" class="sr-only">First Name</label>
+                            <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" required>
+                            <p id="firstname_error" style="color: red"></p> <!-- First name error will be inserted here -->
+                        </div>
+                        
+                        <div id="inputField">
+                            <span id="middleNameField">*</span>
+                            <label for="inputMiddleName" class="sr-only">Middle Name</label>
+                            <input type="text" id="inputMiddleName" class="form-control" placeholder="Middle Name" required>
+                            <p id="middlename_error" style="color: red"></p> <!-- Middle name error will be inserted here -->
+                        </div>
+                        
+                        <div id="inputField">
+                            <span id="required">*</span>
+                            <label for="inputLastName" class="sr-only">Last Name</label>
+                            <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" required>
+                            <p id="lastname_error" style="color: red"></p> <!-- Last name error will be inserted here -->
+                        </div>
+                        
+                        <div id="inputField">
+                            <span id="required">*</span>
+                            <label for="inputEmail" class="sr-only">Email Address</label>
+                            <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required>
+                            <p id="email_error" style="color: red"></p> <!-- Email error will be inserted here -->
+                        </div>
+                        
+                        <div id="inputField">
+                            <span id="required">*</span>
+                            <label for="inputPassword" class="sr-only">Password</label>
+                            <input type="text" id="inputPassword" class="form-control" placeholder="Password" required>
+                            <p id="password_error" style="color: red"></p> <!-- Password error will be inserted here -->
+                        </div>
+                        
+                        <div class="user_type">
+                            <h3>What type of employee are you?</h3>
+                            <p id="required">*</p>
+                            <input type="radio" name="employee_type" value="sales_management"> Sales Management<br>
+                            <input type="radio" name="employee_type" value="FAE"> FAE - Field Application Engineer<br>
+                            <input type="radio" name="employee_type" value="PM"> PM - Product Manager<br>
+                            <input type="radio" name="employee_type" value="RND"> RND - Engineer<br>
+                            <input type="radio" name="employee_type" value="corporate"> Corporate
+                            <p id="employeetype_error" style="color: red"></p> <!-- Employee type error will be inserted here -->
+                        </div>
+
+                        <div class="checkbox">
+                            <span id="required">*</span>
+                            <label>
+                                <input type="checkbox" value="agree-terms"> I agree to the <a href="#">FaceEX terms.</a>
+                            </label>
+                            <p id="checkbox_error" style="color: red"></p> <!-- Checkbox error will be inserted here -->
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+                    </form>
+                </td> 
+
+                <!-- ========== Sign in column ========== --> 
+                <td id="signin_column">
+                    <form class="form-signin">
+                        <h2 class="form-signin-heading">Already have an account? Sign in here!</h2>
+
+                        <div id="inputField">
+                            <label for="inputEmail" class="sr-only">Email Address</label>
+                            <input type="text" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
+                            <p id="email_error" style="color: red"></p> <!-- Email error will be inserted here -->
+                        </div>
+
+                        <div id="inputField">
+                            <label for="inputPassword" class="sr-only">Password</label>
+                            <input type="text" id="inputPassword" class="form-control" placeholder="Password" required>
+                            <p id="password_error" style="color: red"></p> <!-- Password error will be inserted here -->
+                       </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+            
+        <!-- ========== Footer ========== --> 
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2016 VeEX Inc. All Rights Reserved. &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Use</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Disclaimer</a> &middot; <a href="#">Contact</a> &middot; <a href="#">About</a></p>
+        </footer>
+
+    </div>
+</body>
+</html>

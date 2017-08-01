@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome to FaceEX</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- Custom styles for jumbotron template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <!-- Custom styles for carousel template -->
+    <link href="carousel.css" rel="stylesheet">
+    <!-- Custom styles for theme template -->
+    <link href="theme.css" rel="stylesheet">
+
+    <link href="homepage.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ========== Main container ========== --> 
+	<div id="main_container">
+        <!-- ========== Nav bar and sign in ========== --> 
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="homepage.html">FaceEX</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" placeholder="Email Address" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success">Login</button>
+                        <a id="forgot_password_link" href="#">Forgot your password?</a>
+                        <span id="login_error"></span> <!-- Login error will be inserted here -->
+                    </form>
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+    
+        <!-- ========== Carousel ========== --> 
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../pictures/carousel_image1.jpg" alt="Carousel image 1">
+                    <div class="carousel-caption">
+                        <h1 id="carousel_text1">Welcome to FaceEX!</h1>
+                        <p id="carousel_text2">The official social media HUB for every VeEX Inc. product</p>
+                    </div>
+                </div>
+                <div class="item">
+                <img src="../pictures/carousel_image2.jpg" alt="Carousel image 2">
+                    <div class="carousel-caption">
+                        <h1 id="carousel_text1">Discover Products</h1>
+                        <p id="carousel_text2">With every VeEX Inc. product available on FaceEX, you can learn more about what we have to offer</p>
+                    </div>
+                </div>
+                <div class="item">
+                <img src="../pictures/carousel_image3.jpg" alt="Carousel image 3">
+                    <div class="carousel-caption">
+                        <h1 id="carousel_text1">Connect with coworkers</h1>
+                        <p id="carousel_text2">FaceEX offers features for VeEX coworkers to socialize and interact with each other</p>
+                    </div>
+                </div>
+            </div>
+        <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> <!-- Carousel end -->
+
+        <!-- ========== Internal container ========== --> 
+        <div id="internal_container">
+            <div id="signup_account">
+                <h2>Don't have an account? Sign up today!</h2>
+                <a href="../signup/signup.html"><button type="button" class="btn btn-lg btn-primary">Sign Up</button></a>
+            </div>
+
+            <div class="latest_products">
+                <!-- Three columns of text below the carousel -->
+                <h2 id="latest_products_title">See the latest products!</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="img-circle" src="../pictures/latest_image1.jpg" alt="Latest image 1" width="140" height="140">
+                        <h3>CX380s-D3.1</h3>
+                        <p>The CX380s-D3.1 is a next generation test solution designed for analog and digital cable TV networks with enhanced spectrum anaylsis, digital channel, DOCSIS 3.0/3.1, Sweep, MPEG analysis and Ethernet test capabilities.</p>
+                        <p><a class="btn btn-default" href="../user_profilepage/productpage/productpage.html" role="button">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="img-circle" src="../pictures/latest_image2.jpg" alt="Latest image 2" width="140" height="140">
+                        <h3>CX150-D3+ (red)</h3>
+                        <p>The compact, handheld CX150-D3+ is comprised of a feature rich SLM with an embedded DOCSIS 3.0 Cable Modem supporting full 8x4 Channel Bonding.</p>
+                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="img-circle" src="../pictures/latest_image3.jpg" alt="Latest image 3" width="140" height="140">
+                        <h3>AT2500RQvPlus</h3>
+                        <p>The AT2500RQvPlus is the industry’s most complete spectrum analyzer, combining superior QAM analysis and best-in-class analog measurement capability. The enhanced AT-Web automates both the analog and digital proof-of-performance tests, saving time, making tests consistent, and providing excellent documentation.</p>
+                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div>
+
+            <!-- ========== Footer ========== --> 
+            <footer>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>&copy; 2016 VeEX Inc. All Rights Reserved. &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Use</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Disclaimer</a> &middot; <a href="#">Contact</a> &middot; <a href="#">About</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

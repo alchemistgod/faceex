@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/******** General stuff ********/
+body {
+  	background-color: #e6e6e6;
+}
+
+#main_container {
+  	margin: 30px auto;
+  	width: 70%;
+  	overflow: hidden;
+}
+
+#internal_container {
+	width: 50%;
+	margin: 60px auto;
+}
+
+#box_title {
+	/*color: #004d99;*/
+	text-align: center;
+}
+
+/* Shadow effect for sections of page */
+.image_box {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+	clear: both;  /* Prevents footer from moving out of position */ 
+	padding: 40px;
+}
+
+/******** Image settings section ********/
+.image_box {
+	padding: 20px;
+	text-align: center;
+}
+
+#image_form {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #d9d9d9;
+	padding: 5px;
+}
+
+#profile_image {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#changeimage_form {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#submit_button {
+	width: 50%;
+	margin: 0 auto;
+	border-top: 1px solid black;
+	padding: 20px;
+}

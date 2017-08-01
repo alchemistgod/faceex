@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile - test - FaceEX</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="poststatus.js" type="text/javascript"></script>
+    
+    <!-- Custom styles for dashboard template -->
+    <link href="dashboard.css" rel="stylesheet">
+    <!-- Custom styles for offcanvas template -->
+    <link href="offcanvas.css" rel="stylesheet">
+
+    <link href="profilepage.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ========== Main container ========== --> 
+    <div id="main_container">
+        <!-- ========== Top nav bar ========== --> 
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="profilepage.html">FaceEX</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="profilepage.html">Profile</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../settings/general/general_settings.html">General</a></li>
+                                <li><a href="../settings/profileimage/profileimage_settings.html">Profile Image</a></li>
+                                <li><a href="../settings/notifications/notification_settings.html">Notifications</a></li>
+                                <li><a href="../settings/password/password_settings.html">Password</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#notifications">Notifications</a></li>
+                        <li><a href="../../signup/signup.html">Log Out</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </form>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+        <!-- ========== Internal container ========== --> 
+        <div id="internal_container">
+            <div class="first_row">
+                <div class="profile_box">
+                    <div id="profile_picture">
+                        <figure class="profile" id="profile_image">
+                            <img src="../../pictures/profile_image.jpg" alt="profile">
+                        </figure>
+                    </div>
+                    <div id="user_info">
+                        <h1 id="userFirstName">Bob Dylan</h1>
+                        <h4 id="userProfession">PM - Product Manager</h4>
+                        <p id="contact_title">Contact</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Email</th>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <a href="#">bobdylan@veexinc.com</a>
+                                            </li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Work Phone</th>
+                                    <td>
+                                        <ol>
+                                            <li>(510)555-5555 ext. 123</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Cell Phone</th>
+                                    <td>
+                                        <ol>
+                                            <li>(510)123-4567</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="friends_box">
+                    <h1 id="box_title">Friends</h1>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td id="friend_image"><a href="#"><img id="friend_picture" src="../../pictures/friend_image1.jpg" alt="friend 1"></a></td>
+                                <td id="friend_image"><a href="#"><img id="friend_picture" src="../../pictures/friend_image2.png" alt="friend 2"></a></td>
+                                <td id="friend_image"><a href="#"><img id="friend_picture" src="../../pictures/friend_image3.jpg" alt="friend 3"></a></td>
+                                <td id="friend_image"><a href="#"><img id="friend_picture" src="../../pictures/friend_image4.jpg" alt="friend 4"></a></td>
+                                <td id="friend_image"><a href="#"><img id="friend_picture" src="../../pictures/friend_image5.jpg" alt="friend 5"></a></td>
+                                <td id="friend_image"><a href="#"><img id="friend_picture" src="../../pictures/friend_image6.jpg" alt="friend 6"></a></td>
+                            </tr>
+                            <tr>
+                                <td id="friend_name"><a href="#">Sarah<br>Palin</a></td>
+                                <td id="friend_name"><a href="#">Barack<br>Obama</a></td>
+                                <td id="friend_name"><a href="#">Hillary<br>Clinton</a></td>
+                                <td id="friend_name"><a href="#">Bob<br>Smith</a></td>
+                                <td id="friend_name"><a href="#">Patrick<br>Lawrence</a></td>
+                                <td id="friend_name"><a href="#">Tim<br>Cook</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a id="view_more_friends" href="#">View More</a>
+                </div>
+            </div> 
+                
+            <div class="post_box">
+                <h1 id="box_title">Submit a Post</h1>
+                <form method="post">
+                    <textarea id="postsubmission" class="message-form" placeholder="What's happening?" name="message"></textarea><br>
+                    <label for="picture_upload">Upload Images</label>
+                    <input type="file" name="pic" id="picture_upload" accept="image/*"><br>
+                    <label for="video_upload">Upload Videos</label>
+                    <input type="file" name="vid" id="video_upload" accept="video/*"><br>
+                    <label for="regular_file_upload">Upload Documents</label>
+                    <input type="file" name="doc" id="regular_file_upload" accept=".doc"><br>
+                    <input type="button" value="Post" onclick="postStatus()">
+                </form>
+            </div>
+
+            <div class="pinned_box">
+                <h1 id="box_title">My Pinned Activity</h1>
+            </div>
+
+            <div class="myposts_box">
+                <h1 id="box_title">My Posts</h1>
+                <span id="test_post"></span>
+                <span id="test_image"></span>
+            </div>
+        </div>
+
+        <!-- ========== Footer ========== --> 
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2016 VeEX Inc. All Rights Reserved. &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Use</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Disclaimer</a> &middot; <a href="#">Contact</a> &middot; <a href="#">About</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}*/
+
+/******** General stuff ********/
+body {
+  background-color: #e6e6e6;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #6699ff;
+}
+
+h2 {
+  color: #336699;
+}
+
+h3 {
+  color: #333399;
+}
+
+footer {
+  padding: 30px;
+}
+
+#main_container {
+  margin: 30px auto;
+  width: 70%;
+  overflow: hidden;
+}
+
+#required {
+  color: red;
+}
+
+/******* Sign up section *******/
+#signup_column {
+  vertical-align: top;
+  width: 50%;
+  padding: 120px;
+  margin: 10px;
+}
+
+#signin_column {
+  vertical-align: top;
+  width: 50%;
+  border-left: 1px solid gray;
+  padding: 120px;
+  margin: 10px;
+}
+
+#inputField {
+  margin-bottom: 10px;
+}
+
+.form-signup-heading, .form-signin-heading, .user_type h3 {
+  text-align: center;
+}
+
+#middleNameField {
+  visibility: hidden;
+}
+
+.user_type {
+  padding-bottom: 5px;
+}
