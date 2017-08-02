@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/******************** Main navigation and logo ********************************/
+header {
+	padding: 20px 20px 20px 20px;
+    width: 100%;
+	background-color: #00284d;
+	text-decoration: none;
+}
+
+#navigation_links ul {
+	list-style-type: none;
+    margin: -45px 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 100;
+    display: inline;
+    float: right;
+}
+
+#navigation_links li {
+	float: left;
+    margin: 0 5px;
+}
+
+#navigation_links li a {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+
+#registerLink, #loginLink {
+	background-color: #538cc6;
+	color: white;
+}
+
+#registerLink:hover, #loginLink:hover, #registerLink:hover a, #loginLink:hover a {
+	background-color: #4d4dff;
+	color: white;
+}
+
+/******************** Carousel ********************************/
+.carousel-caption {
+  	margin-bottom: 250px;
+}
+
+#carousel_text1, #carousel_text2 {
+  	color: white;
+  	/*margin-bottom: 200px;*/
+}
+
+/******************** General ********************************/
+body {
+    font: 1.1em Calibri;
+    background-color: red;
+    margin: 0 auto;
+}
+
+footer {
+	margin: 30px;
+}
+
+#container {
+	margin: 30px auto;
+	width: 70%;
+	overflow: hidden;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+h2 {
+  	color: #336699;
+}
+
+h3 {
+  	color: #333399;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+/******************** Sign up button ********************************/
+#signup_account {
+	text-align: center;
+	border-bottom: 1px solid gray;
+	padding-bottom: 20px;
+}
+
+/******************** Latest products ********************************/
+#latest_products_title {
+ 	text-align: center;
+}
+
+.latest_products {
+	padding-top: 20px;
+	text-align: justify;
+	border-bottom: 1px solid gray;
+}
+
+/* Center align the text within the three columns below the carousel */
+.latest_products .col-lg-4 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.latest_products h2 {
+	font-weight: normal;
+}
+.latest_products .col-lg-4 p {
+	margin-right: 10px;
+	margin-left: 10px;
+}
