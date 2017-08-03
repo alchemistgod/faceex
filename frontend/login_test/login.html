@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceEX - Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <script src="https://use.fontawesome.com/29dce5faae.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="logoHeader">
+        <header id="logo">
+            <div id="logoFaceEX">
+                <h1><a href="homepage.html">FaceEX</a></h1>
+            </div>
+        </header>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Login form -->
+        <div id="loginForm">
+            <h1>Sign in to FaceEX</h1>
+            <form id="login" method="post">
+                <ul>
+                    <li>
+                        <label for="inputUsername">Username</label>
+                        <input type="text" id="inputUsername" placeholder="Username" name="username" required autofocus>
+                    </li>
+                    <li>
+                        <label for="inputPassword">Password</label>
+                        <input type="password" id="inputPassword" placeholder="Password" name="password" required>
+                    </li>
+                    <li>
+                        <p id="loginError"></p> <!-- Login error message -->
+                    </li>
+                </ul>
+                <button type="submit" id="loginButton" name="submit">Login</button>
+            </form>
+            <p><a href="#">Don't have an account? Register here!</a></p>
+        </div>
+
+        <!-- Footer  -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2016 VeEX Inc. All Rights Reserved. &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Use</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Disclaimer</a> &middot; <a href="#">Contact</a> &middot; <a href="#">About</a></p>
+        </footer>
+    </div>
+</body>
+</html>

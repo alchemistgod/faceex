@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/******************** Logo ********************************/
+.logoHeader {
+	text-align: center;
+	width: 100%;
+}
+
+/******************** General ********************************/
+body {
+	font: 1.1em Calibri;
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    width: 85%;
+}
+
+/******************** Login form ********************************/
+#loginForm {
+	width: 30%;
+    margin: auto;
+    animation: fadein 1;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+#loginForm input {
+	width: 100%;
+}
+
+#login li {
+	list-style-type: none;
+}
+
+#loginButton {
+	width: 100%;
+}
